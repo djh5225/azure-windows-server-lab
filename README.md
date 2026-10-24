@@ -64,8 +64,6 @@ NSG rules are evaluated by priority, and the first match wins. I created two:
 ### 5. Deploy VM1
 I deployed **VM1** with Windows Server 2025 Datacenter (x64 Gen2), size Standard_B2ls_v2, the Standard security type, and no infrastructure redundancy, in MyVNet / MySubnet.
 
-During setup, Azure noticed that MySubnet was already associated with MyNSG and recommended managing connectivity through that NSG instead of creating a second one on the network interface. I followed that advice and left the NIC-level NSG set to **None**, which keeps all rules in one place.
-
 ![No VMs before deployment](screenshots/07-vm-list-empty.png)
 ![VM1 basics](screenshots/08-vm1-basics.png)
 ![VM1 networking](screenshots/09-vm1-networking.png)
